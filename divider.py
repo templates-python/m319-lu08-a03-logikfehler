@@ -7,9 +7,9 @@ def main():
     second_number = int(input("Gib die zweite Ganzzahl ein > "))
     while second_number != 0:
         modulo = first_number % second_number
-        second_number = first_number
-        first_number = modulo
-    print(str(second_number))
+        first_number = second_number
+        second_number = modulo
+    print(str(first_number))
 
 
 if __name__ == '__main__':
