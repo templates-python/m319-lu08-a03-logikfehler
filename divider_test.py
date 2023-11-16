@@ -2,7 +2,7 @@ import divider
 
 
 def test_1(monkeypatch, capsys):
-    inputs = iter([8565, 135])
+    inputs = iter(['8565', '135'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     divider.main()
     captured = capsys.readouterr()
@@ -10,7 +10,7 @@ def test_1(monkeypatch, capsys):
 
 
 def test_3(monkeypatch, capsys):
-    inputs = iter([11, 58762])
+    inputs = iter(['11', '58762'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
     divider.main()
     captured = capsys.readouterr()
